@@ -1,0 +1,91 @@
+/**
+ * Таблица стилей для класса Calendar.
+ *
+ * @author    andrey-tech
+ * @copyright 2019-2020 andrey-tech
+ * @see https://github.com/andrey-tech/calendar-js
+ * @license MIT
+ *
+ */
+
+.neuro-calendar-year-wrapper {
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.neuro-calendar-year-title {
+    flex: 100%;
+    height: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.neuro-calendar-month-wrapper {
+    margin: .625rem;
+    padding: .625rem;
+    border: thin solid #c0c0c0;
+    border-radius: 3px;
+}
+
+.neuro-calendar-month-title {
+    height: 1.25rem;
+    font-weight: bold;    
+    text-align: center;
+}
+
+.neuro-calendar-month {
+    display: grid;
+    width: 100%;
+    height: calc(100% - 1.25rem);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1.875rem repeat(1, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.neuro-calendar-month > div {
+    padding: 5px;
+}
+
+.neuro-calendar-month > div[data-day] {
+    border-left: thin solid #c0c0c0;
+    border-bottom: thin solid #c0c0c0;
+}
+
+.neuro-calendar-month > div[data-wday="1"] {
+    border-left: none;
+}
+
+.neuro-calendar-month > div[data-day]:not(:nth-last-of-type(n+8)) {
+    border-bottom: none;
+}
+
+.neuro-calendar-month > div[data-wday="6"],
+.neuro-calendar-month > div[data-wday="0"] {
+    color: red;
+}
+
+.neuro-calendar-month .wday {
+    text-align: right;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.neuro-calendar-month .day-number {
+    text-align: right;
+}
+
+.neuro-calendar-month > .today {
+    border: 2px solid red !important;
+    border-radius: 3px;
+}
+
+.neuro-calendar-month > .today > .day-number {
+    font-weight: bold;
+}
+
+.neuro-calendar-month > .previous > .day-number,
+.neuro-calendar-month > .next > .day-number {
+    color: #c0c0c0;
+}

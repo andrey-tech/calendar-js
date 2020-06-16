@@ -1,0 +1,15 @@
+{
+    "name": "andrey-tech/calendar-js",
+    "description": "Класс Calendar. Формирует календарь на год или на месяц с версткой CSS Grid Layout",
+    "keywords": [ "calendar", "javascript", "jquery", "cssgrid" ],
+    "homepage": "https://github.com/andrey-tech/calendar-js",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andrey-tech",
+            "homepage": "https://github.com/andrey-tech/",
+            "role": "Developer"
+        }
+    ]
+}
