@@ -117,9 +117,9 @@ $(() => {
 
 ```js
 $(() => {
-    let calendar = new Calendar(2000);
+    let calendar = new Calendar(2020);
 
-    // Получам календарь на 2000 год
+    // Получам календарь на 2020 год
     let $year = calendar.getYearHTML();
 
     // Выводим календарь
@@ -147,9 +147,9 @@ $(() => {
 
 ```js
 $(() => {
-    let calendar = new Calendar(2000);
+    let calendar = new Calendar(2020);
 
-    // Получам календарь на июнь месяц 2000-го года
+    // Получам календарь на июнь месяц 2020-го года
     let $month = calendar.getMonthHTML(5);
 
     // Выводим календарь
